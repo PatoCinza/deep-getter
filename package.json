@@ -1,0 +1,19 @@
+{
+  "name": "get-all",
+  "version": "0.0.0",
+  "description": "get all the way through your variable without breaking your app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PatoCinza/get-all.git"
+  },
+  "author": "Pato Cinza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PatoCinza/get-all/issues"
+  },
+  "homepage": "https://github.com/PatoCinza/get-all#readme"
+}
