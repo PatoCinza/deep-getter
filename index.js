@@ -1,7 +1,13 @@
+/**
+ * Represents an error in some accessing operation
+ * @interface
+ * @prop { true } isNothing
+ */
 const Nothing = { isNothing: true }
 
 /**
- * Gets the obj[key] property, returns Nothing if it doesnt exists
+ * Gets the obj[key] property, returns {@see Nothing} if it doesnt exists
+ * @private
  * @param { Object } obj Object to be accessed
  * @param { String } key Key to be used
  * @returns { * | Nothing } Accessed property or nothing
@@ -10,7 +16,10 @@ const get = (obj, key) => (obj && obj[key] !== null && obj[key] !== undefined) ?
 
 module.exports = {
   /**
-   * Access all properties on object going through the given path
+   * Access all properties on object going through the given path,
+   * returns {@link Nothing} if it is not possible to fetch the value
+   * @global
+   * @name getAll
    * @param { Object } obj Object to be accessed
    * @param { String } path Path to be accessed separated by .
    * @returns { * | Nothing } Final accessed property or nothing
@@ -19,6 +28,8 @@ module.exports = {
 
   /**
    * Checks if x is Nothing
+   * @global
+   * @name isNothing
    * @param { * } x Anything you want to test
    * @returns { Boolean } whether it's equal or not
    */

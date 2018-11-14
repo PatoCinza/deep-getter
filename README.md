@@ -60,6 +60,9 @@ const clusterName = getAll(cluster, 'up.149.label')
 const clusterName = cluster.up && cluster.up['149'] && cluster.up['149'].label
 ```
 
+## Docs
+You can access the docs at: (docs)[https://github.com/patocinza/get-alltree/master/docs]
+
 ## Questions?
 If you have any questions about using Arthemis on your project, please open a (new issue)[https://github.com/patocinza/get-all/issues/new].
 

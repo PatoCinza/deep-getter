@@ -4,6 +4,7 @@
   "description": "get all the way through your variable without breaking your app",
   "main": "index.js",
   "scripts": {
+    "docs": "npx jsdoc2md *.js > ./docs/README.md",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,9 +12,12 @@
     "url": "git+https://github.com/PatoCinza/get-all.git"
   },
   "author": "Pato Cinza",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/PatoCinza/get-all/issues"
   },
-  "homepage": "https://github.com/PatoCinza/get-all#readme"
+  "homepage": "https://github.com/PatoCinza/get-all#readme",
+  "devDependencies": {
+    "jsdoc-to-markdown": "^4.0.1"
+  }
 }
