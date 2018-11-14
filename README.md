@@ -61,19 +61,19 @@ const clusterName = cluster.up && cluster.up['149'] && cluster.up['149'].label
 ```
 
 ## Docs
-You can access the docs at: (docs)[https://github.com/patocinza/get-alltree/master/docs]
+You can access the docs at: [docs](https://github.com/patocinza/get-alltree/master/docs)
 
 ## Questions?
-If you have any questions about using Arthemis on your project, please open a (new issue)[https://github.com/patocinza/get-all/issues/new].
+If you have any questions about using Arthemis on your project, please open a [new issue](https://github.com/patocinza/get-all/issues/new).
 
 ## Filing a bug
 
-If you found a bug, please open a (new issue)[https://github.com/patocinza/get-all/new].
+If you found a bug, please open a [new issue](https://github.com/patocinza/get-all/new).
 
 ## Contributing
 
 This project is open for contributions.
-To suggest a new feature, please open a (new issue)[https://github.com/patocinza/get-all/issues/new].
+To suggest a new feature, please open a [new issue](https://github.com/patocinza/get-all/issues/new).
 To fix a filed bug or implementing a feature, please fork this project, create a new branch containing your code and send a pull request. If you need any guidance, you can reach us out by creating a new issue.
 
 ## Versioning
