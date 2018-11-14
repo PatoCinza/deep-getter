@@ -1,13 +1,13 @@
 {
   "name": "get-all",
-  "version": "0.0.0",
+  "version": "0.0.3",
   "description": "get all the way through your variable without breaking your app",
   "main": "index.js",
   "scripts": {
-    "build": "npm run lint && npm run docs",
+    "build": "npm run lint && npm run test && npm run docs",
     "docs": "npx jsdoc2md *.js > ./docs/README.md",
     "lint": "eslint --ext .js ./",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
     "eslint-plugin-node": "^8.0.0",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
+    "jest": "^23.6.0",
     "jsdoc-to-markdown": "^4.0.1"
   }
 }
