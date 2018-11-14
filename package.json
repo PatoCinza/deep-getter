@@ -1,6 +1,6 @@
 {
   "name": "get-all",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "get all the way through your variable without breaking your app",
   "main": "index.js",
   "scripts": {
