@@ -1,8 +1,8 @@
 ## Members
 
 <dl>
-<dt><a href="#getAll">getAll</a> ⇒ <code>*</code> | <code><a href="#Nothing">Nothing</a></code></dt>
-<dd><p>Access all properties on object going through the given path,
+<dt><a href="#deepGet">deepGet</a> ⇒ <code>*</code> | <code><a href="#Nothing">Nothing</a></code></dt>
+<dd><p>Access deep properties on object going through the given path,
 returns <a href="#Nothing">Nothing</a> if it is not possible to fetch the value</p>
 </dd>
 <dt><a href="#isNothing">isNothing</a> ⇒ <code>Boolean</code></dt>
@@ -30,10 +30,10 @@ Represents an error in some accessing operation
 | --- | --- |
 | isNothing | <code>true</code> | 
 
-<a name="getAll"></a>
+<a name="deepGet"></a>
 
-## getAll ⇒ <code>\*</code> \| [<code>Nothing</code>](#Nothing)
-Access all properties on object going through the given path,
+## deepGet ⇒ <code>\*</code> \| [<code>Nothing</code>](#Nothing)
+Access deep properties on object going through the given path,
 returns [Nothing](#Nothing) if it is not possible to fetch the value
 
 **Kind**: global variable  

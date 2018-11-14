@@ -1,4 +1,4 @@
-const { getAll, isNothing } = require('../index')
+const { deepGet, isNothing } = require('../index')
 const mock = {
   data: {
     colors: [ 'gray', 'blue' ],
@@ -10,44 +10,44 @@ const mock = {
   }
 }
 
-describe('getAll function', () => {
+describe('deepGet function', () => {
   it('should return the property value', () => {
-    expect(getAll(mock, 'data.details.hasImage')).toBe(true)
+    expect(deepGet(mock, 'data.details.hasImage')).toBe(true)
   })
 
   it('should return false in false property instead of Nothing', () => {
-    expect(getAll(mock, 'data.details.falseProp')).toBe(false)
+    expect(deepGet(mock, 'data.details.falseProp')).toBe(false)
   })
 
   it('should access array index in path', () => {
-    expect(getAll(mock, 'data.colors.1')).toEqual(mock.data.colors[1])
+    expect(deepGet(mock, 'data.colors.1')).toEqual(mock.data.colors[1])
   })
 
   it('should access numeric keys in path', () => {
-    expect(getAll(mock, 'data.12')).toEqual(mock.data['12'])
+    expect(deepGet(mock, 'data.12')).toEqual(mock.data['12'])
   })
 })
 
 describe('isNothing function', () => {
-  it('should return true when getAll returns Nothing', () => {
-    expect(isNothing(getAll({}, 'prop.prop'))).toBe(true)
+  it('should return true when deepGet returns Nothing', () => {
+    expect(isNothing(deepGet({}, 'prop.prop'))).toBe(true)
   })
 
-  it('should return false when getAll returns Nothing', () => {
-    expect(isNothing(getAll(mock, 'data.colors'))).toBe(false)
+  it('should return false when deepGet returns Nothing', () => {
+    expect(isNothing(deepGet(mock, 'data.colors'))).toBe(false)
   })
 
   it('Nothing should not be equal to another instance of Nothing', () => {
-    expect(getAll({}, 'prop.prop') === { isNothing: true }).toBe(false)
+    expect(deepGet({}, 'prop.prop') === { isNothing: true }).toBe(false)
   })
 })
 
 describe('failsafe environment', () => {
   it('should return Nothing when accessing not existent key', () => {
-    expect(isNothing(getAll(mock, 'data.error'))).toBe(true)
+    expect(isNothing(deepGet(mock, 'data.error'))).toBe(true)
   })
 
   it('should not break when accessing subsequent non existent keys', () => {
-    expect(isNothing(getAll(mock, 'data.error.error.error.error'))).toBe(true)
+    expect(isNothing(deepGet(mock, 'data.error.error.error.error'))).toBe(true)
   })
 })

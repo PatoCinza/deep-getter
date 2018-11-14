@@ -1,5 +1,5 @@
 {
-  "name": "get-all",
+  "name": "deep-getter",
   "version": "1.0.0",
   "description": "get all the way through your variable without breaking your app",
   "main": "index.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PatoCinza/get-all.git"
+    "url": "git+https://github.com/PatoCinza/deep-getter.git"
   },
   "author": "Pato Cinza",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/PatoCinza/get-all/issues"
+    "url": "https://github.com/PatoCinza/deep-getter/issues"
   },
-  "homepage": "https://github.com/PatoCinza/get-all#readme",
+  "homepage": "https://github.com/PatoCinza/deep-getter#readme",
   "devDependencies": {
     "eslint": "^5.9.0",
     "eslint-config-standard": "^12.0.0",

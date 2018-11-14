@@ -16,15 +16,15 @@ const get = (obj, key) => (obj && obj[key] !== null && obj[key] !== undefined) ?
 
 module.exports = {
   /**
-   * Access all properties on object going through the given path,
+   * Access deep properties on object going through the given path,
    * returns {@link Nothing} if it is not possible to fetch the value
    * @global
-   * @name getAll
+   * @name deepGet
    * @param { Object } obj Object to be accessed
    * @param { String } path Path to be accessed separated by .
    * @returns { * | Nothing } Final accessed property or nothing
    */
-  getAll: (obj, path) => path && path.split('.').reduce(get, obj),
+  deepGet: (obj, path) => path && path.split('.').reduce(get, obj),
 
   /**
    * Checks if x is Nothing
