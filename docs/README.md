@@ -8,7 +8,7 @@ returns <a href="#Nothing">Nothing</a> if it is not possible to fetch the value<
 <dt><a href="#isNothing">isNothing</a> ⇒ <code>Boolean</code></dt>
 <dd><p>Checks if x is Nothing</p>
 </dd>
-<dt><a href="#deepGetOrElse">deepGetOrElse</a></dt>
+<dt><a href="#deepGetOrElse">deepGetOrElse</a> ⇒ <code>*</code></dt>
 <dd><p>Access deep properties on object going through the given path
 If it would return a <a href="#Nothing">Nothing</a>, it returns <code>fallback</code> instead</p>
 </dd>
@@ -62,11 +62,12 @@ Checks if x is Nothing
 
 <a name="deepGetOrElse"></a>
 
-## deepGetOrElse
+## deepGetOrElse ⇒ <code>\*</code>
 Access deep properties on object going through the given path
 If it would return a [Nothing](#Nothing), it returns `fallback` instead
 
 **Kind**: global variable  
+**Returns**: <code>\*</code> - The accessed prop, or the fallback value  
 
 | Param | Type | Description |
 | --- | --- | --- |

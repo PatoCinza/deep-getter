@@ -1,5 +1,29 @@
 {
   "extends": "standard",
+  "rules": {
+    "standard/object-curly-even-spacing": "off",
+    "valid-jsdoc": "error",
+    "indent": [
+      "error",
+      2
+    ],
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ],
+    "require-jsdoc": [
+      "error",
+      {
+        "require": {
+          "FunctionDeclaration": true,
+          "ArrowFunctionExpression": true,
+          "FunctionExpression": true,
+          "MethodDefinition": true,
+          "ClassDeclaration": true
+        }
+      }
+    ]
+  },
   "env": {
     "jest": true
   }
