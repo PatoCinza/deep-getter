@@ -8,6 +8,10 @@ returns <a href="#Nothing">Nothing</a> if it is not possible to fetch the value<
 <dt><a href="#isNothing">isNothing</a> ⇒ <code>Boolean</code></dt>
 <dd><p>Checks if x is Nothing</p>
 </dd>
+<dt><a href="#deepGetOrElse">deepGetOrElse</a></dt>
+<dd><p>Access deep properties on object going through the given path
+If it would return a <a href="#Nothing">Nothing</a>, it returns <code>fallback</code> instead</p>
+</dd>
 </dl>
 
 ## Interfaces
@@ -55,4 +59,18 @@ Checks if x is Nothing
 | Param | Type | Description |
 | --- | --- | --- |
 | x | <code>\*</code> | Anything you want to test |
+
+<a name="deepGetOrElse"></a>
+
+## deepGetOrElse
+Access deep properties on object going through the given path
+If it would return a [Nothing](#Nothing), it returns `fallback` instead
+
+**Kind**: global variable  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| obj | <code>Object</code> | Object to be accessed |
+| path | <code>String</code> | Path to be accessed separated by . |
+| fallback | <code>\*</code> | the value to return if obj[path] is Nothing |
 

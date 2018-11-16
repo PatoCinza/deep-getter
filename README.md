@@ -60,6 +60,21 @@ const clusterName = deepGet(cluster, 'up.149.label')
 const clusterName = cluster.up && cluster.up['149'] && cluster.up['149'].label
 ```
 
+We have another function to use with it, the `deepGetOrElse` comes with a isNothing check, so that if you are sure you'll need a fallback value you can put it already on the function and have no need to check it later
+```js
+const { deepGetOrElse } = require('deep-getter')
+
+// Let's revisit this piece of code
+const grayHex = product.details && product.details.specs && product.details.specs.color && product.details.specs.color.gray
+
+grayHex ? grayHex : '#444'
+
+// This is where deepGetOrElse really shines:
+deepGetOrElse(product, 'details.specs.color.gray', '#444')
+
+```
+And this is it, the fallback: `'#444'` will return if `product.details.specs.color.gray` is Nothing
+
 ## Docs
 You can access the docs at: [docs](https://github.com/patocinza/deep-gettertree/master/docs)
 
