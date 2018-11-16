@@ -1,7 +1,7 @@
 # deepGetter
 Simple interface to access deep properties in an Object in a failsafe way, returning the value or a `Nothing` if it doesn't exists
 
-You will probably want it when messing with third party APIs, or putting a third party product on your clients, because you can rely on api responses, or properties you need to have on pages, other than that, it's just a cleaner way to do some stuff
+You will probably want it when messing with third party APIs, or putting a third party product on your clients, because you cant rely on api responses, or properties you need to have on pages, other than that, it's just a cleaner way to do some variable accessing
 
 ## Getting Started
 These instructions will get you through installing and using deep-getter on your project.
