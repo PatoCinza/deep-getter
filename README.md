@@ -76,7 +76,7 @@ deepGetOrElse(product, 'details.specs.color.gray', '#444')
 And this is it, the fallback: `'#444'` will return if `product.details.specs.color.gray` is Nothing
 
 ## Docs
-You can access the docs at: [docs](https://github.com/patocinza/deep-gettertree/master/docs)
+You can access the docs at: [docs](https://github.com/patocinza/deep-getter/tree/master/docs)
 
 ## Questions?
 If you have any questions about using Arthemis on your project, please open a [new issue](https://github.com/patocinza/deep-getter/issues/new).
